@@ -18,8 +18,7 @@ class HashiconPainter extends CustomPainter {
       _config = config;
     }
 
-    var hasher =
-        const Blake2s(128 >>> 3).config(key: _config.hashKey.codeUnits);
+    final hasher = blake2s128.mac.by(_config.hashKey.codeUnits);
     _hash = hasher.string(hash).bytes;
   }
 
