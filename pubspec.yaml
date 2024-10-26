@@ -1,7 +1,8 @@
 name: flutter_hashicon
 description: Hashicon is a unique avatar generator that creates a beautiful icon based on any string you provide.
 version: 0.0.2
-homepage:
+
+repository: https://github.com/g45t345rt/flutter_hashicon
 
 environment:
   sdk: '>=3.4.0 <4.0.0'
